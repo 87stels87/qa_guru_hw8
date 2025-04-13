@@ -57,14 +57,6 @@ class Cart:
         Метод добавления продукта в корзину.
         Если продукт уже есть в корзине, то увеличиваем количество
         """
-        # if product.check_quantity(buy_count):
-        #     if product.check_quantity(buy_count) and product.name in self.products.values():
-        #         buy_count += buy_count
-        #     else:
-        #         self.products[product] = buy_count
-        # else:
-        #     raise ValueError("Товара недостаточно")
-
         if product.check_quantity(buy_count) and buy_count > 0:
             if product in self.products:
                 self.products[product] += buy_count
